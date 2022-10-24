@@ -1,16 +1,18 @@
 <?php
     include("conexao.php");
 
+ 
     require("auten.php");
 
 
-    $sql_mensagens = "SELECT * FROM  cadastro_sorv ";
+
+    $sql_mensagens = "SELECT * FROM log ";
     $consulta_mensagens = $mysqli->query($sql_mensagens) or die($mysqli->error);
     $quantidade_mensagens = $consulta_mensagens->num_rows;
 ?>
 
 <!DOCTYPE html>
-    <html lang="pt-br">
+    <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,17 +58,16 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
 
     <div class="container">
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
                     <th>ID</th>
-                    <th>Nome da sorveteria</th>
-                    <th>Endereço</th>
-                    <th>Telefone</th>
-                    <th>Imagem da sorveteria</th>
-                    <th>Data</th>
+                    <th>Login</th>
+                    <th>senha</th>
                 </thead>
                 <tbody>
                 <?php if ($quantidade_mensagens == 0 ){ ?>
@@ -76,16 +77,11 @@
                     <?php
                         } else {
                             while ($mensagem = $consulta_mensagens -> fetch_assoc()){
-
-                                $data = date ("d/m/Y H:i", strtotime ($mensagem['data']));
                     ?>
                     <tr>
-                        <td> <?php echo $mensagem['id']; ?> </td>
-                        <td> <?php echo $mensagem['endereco']; ?> </td>
-                        <td> <?php echo $mensagem['nome']; ?> </td>
-                        <td> <?php echo $mensagem['numero']; ?> </td>
-                        <td> <img src="<?php echo $mensagem['img']; ?>" alt=""> </td>
-                        <td> <?php echo $data; ?> </td>
+                        <td> <?php echo $mensagem['id_senha']; ?> </td>
+                        <td> <?php echo $mensagem['login']; ?> </td>
+                        <td> <?php echo $mensagem['senha']; ?> </td>
                     </tr>
                     <?php 
                     }
