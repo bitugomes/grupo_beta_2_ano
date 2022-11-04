@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+   
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <nav class="navbar fixed-top" style="background-color:  #ee3a73;">
+      <div class="container-fluid   ">
+        <img src="imgs/ice.png" class="navbar-brand" height="150px" width="200px">
+        <a class="navbar-brand" href="#"><h1 class="men"> Sorveterias</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" style="background-color: #ee3a73;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="imgs/ice.png" alt="" width="300px" height="300px">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><h2 class="man">Início</h2></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.html"><h2 class="man">Publique a sua sorveteria</h2></a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html"><h2 class="man"></h2  ></a>
+            </li>
+              <li class="nav-item dropdown">
+          </div>
+        </div>
+      </div>
+    </nav>
+     <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+         
+          <div class="carousel-item active">
+
+            <img src="imgs/Screenshoto.png" class="d-block w-100" alt="" class="img-fluid" width="720" height="700" >
+
+          </div>    
+          <div class="carousel-item">
+            <img src="imgs/Screenshot_13.png" class="d-block w-100" alt="..." class="img-fluid" width="750" height="700">
+          </div>      
+          <div class="carousel-item">
+
+            <img src="imgs/Screenshot_15.png" class="d-block w-100" alt="..." class="img-fluid" width="750" height="700">
+
+          </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span id="corseta" class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span id="corseta" class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div>
+
+    <br> 
+        <div class="text-center">
+      <div class="container">
+        <h3 class="model1">Endereço: Osvaldo Cruz, Jardim Brasília, 1550</h3> 
+        <br>
+        <h3 class="model3">Telefone: 43 996616091 </h3>
+        <br>
+        <button id="butao" class="btn btn-primary=" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <h3 class="model2">
+          Cardápio
+        </h3>
+        </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <img src="imgs/abc.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
